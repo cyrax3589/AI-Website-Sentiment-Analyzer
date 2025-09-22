@@ -1,93 +1,34 @@
-Overview
+# AI Website Sentiment Analyzer  
 
-The AI Website Sentiment Analyzer is a Python-based tool that scrapes textual data from websites, analyzes sentiment using both VADER and BERT-based sentiment models, and visualizes the results. It enables users to extract and evaluate text data from web pages, store it in CSV format, and generate insights via sentiment distribution charts and word clouds.
+The **AI Website Sentiment Analyzer** is a Python-based tool that scrapes textual data from websites, performs sentiment analysis using **VADER** and **BERT-based models**, and visualizes the results. It allows users to extract and evaluate text from web pages, save it in CSV format, and gain insights through sentiment charts and word clouds.  
 
-Features
+---
 
-Web Scraping: Extracts textual data from web pages using Selenium.
+## Features  
 
-Sentiment Analysis:
+- **Web Scraping**: Extracts text from web pages using Selenium.  
+- **Sentiment Analysis**:  
+  - **VADER** – quick sentiment detection for short/general text.  
+  - **BERT Transformer** – deeper, context-aware sentiment analysis.  
+  - **Combined sentiment analysis** for improved accuracy.  
+- **CSV Export**: Saves scraped and analyzed data to CSV.  
+- **Data Visualization**:  
+  - Sentiment distribution pie chart.  
+  - Sentiment breakdown by source.  
+  - Word cloud of frequently used terms.  
+- **GUI Interface**: Easy-to-use Tkinter-based user interface.  
 
-VADER (for short, general text analysis)
+---
 
-BERT Transformer (for more nuanced sentiment detection)
+## Folder Structure
 
-Combined sentiment analysis for more accurate results
-
-CSV Export: Saves extracted and analyzed data to a CSV file.
-
-Data Visualization:
-
-Sentiment distribution pie chart
-
-Sentiment breakdown by source
-
-Word cloud of frequently used terms
-
-GUI Interface: Provides an easy-to-use Tkinter-based UI for user interaction.
-
-Installation
-
-Prerequisites
-
-Ensure you have the following installed:
-
-Python 3.7+
-
-pip
-
-Required Dependencies
-
-Install the necessary Python libraries using:
-
-pip install -r requirements.txt
-
-Dependencies:
-
-pandas
-
-matplotlib
-
-wordcloud
-
-tkinter
-
-beautifulsoup4
-
-nltk
-
-transformers
-
-torch
-
-selenium
-
-webdriver-manager
-
-How to Use
-
-Run the Application
-
-python sentiment_analyzer.py
-
-Steps:
-
-Click "Scrape Website & Save CSV" to enter a URL and extract reviews/text.
-
-Click "Load and Analyze CSV" to visualize sentiment analysis results.
-
-Folder Structure
-
-![image](https://github.com/user-attachments/assets/d0bd8136-5ae0-4a0f-b594-d4bf05772e00)
-
-Notes
-
-The script runs Selenium in headless mode to avoid opening a browser.
-
-Text exceeding 512 characters is truncated for BERT analysis due to model limitations.
-
-Ensure Google Chrome and ChromeDriver are installed and updated.
-
-License
-
-This project is licensed under the MIT License.
+project/
+│── sentiment_analyzer.py
+│── requirements.txt
+│── README.md
+│── data/
+│   └── scraped_data.csv
+│── visuals/
+│   ├── sentiment_pie.png
+│   ├── sentiment_breakdown.png
+│   └── wordcloud.png
