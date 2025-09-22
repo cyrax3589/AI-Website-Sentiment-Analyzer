@@ -24,11 +24,19 @@ The **AI Website Sentiment Analyzer** is a Python-based tool that scrapes textua
 
 project/
 │── sentiment_analyzer.py
+
 │── requirements.txt
+
 │── README.md
+
 │── data/
+
 │   └── scraped_data.csv
+
 │── visuals/
+
 │   ├── sentiment_pie.png
+
 │   ├── sentiment_breakdown.png
+
 │   └── wordcloud.png
