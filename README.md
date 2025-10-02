@@ -40,3 +40,6 @@ project/
 │   ├── sentiment_breakdown.png
 
 │   └── wordcloud.png
+
+## Visual Representation
+<img width="1920" height="1080" alt="Visual Output" src="https://github.com/user-attachments/assets/216556c0-9665-4a41-8e57-2610d5638520" />
